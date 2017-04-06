@@ -9,6 +9,7 @@ main:
         mov r9,#0
 
         ldr r8,=arreglo
+@ciclo para llenar array 1
 ciclo1:
         add r8, r8, r9
         ldr r0,=formatoI
@@ -33,7 +34,7 @@ ciclo1:
         ldr r7,=arregloR
         add r7,r7,#40
 
-
+@ciclo para imprimir array 1 y llenar array 2
 ciclo2:
         add r8,r8,r10
         sub r7,r7,r10
@@ -51,6 +52,7 @@ ciclo2:
         mov r10,#0
         ldr r7, =arregloR
 
+@imprimir arreglo 2
 ciclo3:
         ldr r1,[r7]
         ldr r0,=formatoE
@@ -60,7 +62,7 @@ ciclo3:
         cmp r10,#40
         bne ciclo3
 
-
+@salir
 salir:
         mov r3, #0
         mov r0, r3
