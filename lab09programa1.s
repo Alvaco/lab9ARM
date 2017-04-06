@@ -80,3 +80,4 @@ formatoE: .asciz "%d\n"
 formatoBlank: .asciz "\n"
 formatoOrd: .asciz "\nOriginal: \n"
 formatoInv: .asciz "\nInvertido: \n"
+
